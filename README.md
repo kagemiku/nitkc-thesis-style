@@ -6,19 +6,30 @@ Style file of LaTeX for graduation thesis at NIT, Kagoshima College.
 * none
 
 ## thesis
-* `thesis/nitkc-thesis.sty`
+* **thesis/nitkc-thesis.sty**
 
 ### Usage
 #### `\cover` command
 Creation cover page.
 ```tex
-\cover{Title}{Student No}{Name of you}{Name of supervisor}{date of submission}
+\begin{document}
+\cover{Title}{Student No}{Name of you}{Name of supervisor}{Filing date(day only)}
+.
+.
+.
+\end{document}
 ```
 
 #### `\toc` command
 Creation table of contents.
 ```tex
+\begin{document}
+.
 \toc
+.
+.
+.
+\end{document}
 ```
 
 # Author
