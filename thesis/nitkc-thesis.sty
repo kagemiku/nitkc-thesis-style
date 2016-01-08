@@ -1,14 +1,15 @@
 \ProvidesPackage{nitkc-thesis}
 
-\usepackage[top=40truemm, bottom=30truemm, left=35truemm, right=25truemm]{geometry}
+\RequirePackage{geometry}
+\geometry{top=40truemm, bottom=30truemm, left=35truemm, right=25truemm}
 
 \renewcommand{\baselinestretch}{0.88} %1ページあたり42行程度に
 
 % 表紙作成のコマンド
 %  \cover{タイトル}{学籍番号}{氏名}{指導教員名}{提出日にち}
 %%%
-\makeatletter
 \newcommand{\cover}[5]{\newpage%
+\thispagestyle{empty}
 \begin{center}
 \vspace*{6em}
     {\Large 平成27年度\quad 卒業研究\par}\vspace*{1em}
@@ -21,17 +22,15 @@
     \makebox[5zw][r]{指導教員} ： \makebox[10zw][l]{#4}\par
     \makebox[5zw][r]{提出日} ： \makebox[10zw][l]{2016年1月#5 日}\par}
 \end{center}
-\thispagestyle{empty}
-\newpage}
-\makeatother
+\newpage
+\setcounter{page}{1}}
 
 %%%
 % 目次作成のコマンド
 %  \toc
 %%%
-\newcommand{\toc}{\newpage%
+\newcommand{\maketoc}{\newpage%
 \thispagestyle{empty}
 \tableofcontents
 \clearpage
-\pagenumbering{arabic}}
-
+\setcounter{page}{1}}
