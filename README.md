@@ -15,10 +15,10 @@ Creation cover page.
 \cover{Title}{Student No}{Name of you}{Name of supervisor}{date of submission}
 ```
 
-#### `\toc` command
-Creation table of contents.
+#### `\maketoc` command
+Creation table of contents which has no number of page in footer.
 ```tex
-\toc
+\maketoc
 ```
 
 # Author
