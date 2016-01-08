@@ -36,12 +36,12 @@ Creation cover page.
 \end{document}
 ```
 
-#### `\toc` command
-Creation table of contents.
+#### `\maketoc` command
+Creation table of contents which has no number of page in footer.
 ```tex
 \begin{document}
 .
-\toc
+\maketoc
 .
 .
 .
