@@ -9,13 +9,15 @@ Style file of LaTeX for graduation thesis at NIT, Kagoshima College.
 * **proceeding/nitkc-proceeding.sty**
 
 ### Usage
-#### `\myid` command
+* `\myid` command
+
 Adding ID prefix to page number in footer.
 ```tex
 \myid{ID}
 ```
 
-#### `\proctitle` command
+* `\proctitle` command
+
 Creation title of proceeding.
 ```tex
 \proctitle{Title}{Your Name}{Supervisor Name}
@@ -25,7 +27,8 @@ Creation title of proceeding.
 * **thesis/nitkc-thesis.sty**
 
 ### Usage
-#### `\cover` command
+* `\cover` command
+
 Creation cover page.
 ```tex
 \begin{document}
@@ -36,7 +39,8 @@ Creation cover page.
 \end{document}
 ```
 
-#### `\maketoc` command
+* `\maketoc` command
+
 Creation table of contents which has no number of page in footer.
 ```tex
 \begin{document}
@@ -47,6 +51,9 @@ Creation table of contents which has no number of page in footer.
 .
 \end{document}
 ```
+
+# Examples
+Please look at **examples** directory.
 
 # Author
 KAGE
