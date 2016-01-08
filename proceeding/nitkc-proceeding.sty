@@ -1,0 +1,25 @@
+\ProvidesPackage{nitkc-proceeding}
+
+\RequirePackage{geometry}
+\geometry{top=20truemm, bottom=20truemm, left=20truemm, right=20truemm}
+
+\renewcommand{\baselinestretch}{0.88} %1ページあたり42行程度に
+
+\newcommand{\myid}[1]{\def\themesid{#1}}
+
+\def\ps@myplain{\let\@mkboth\@gobbletwo% 新しいページスタイル
+\let\ps@jpl@in\ps@plain
+\let\@oddhead\@empty
+\def\@oddfoot{\reset@font\hfil\themesid--\thepage\hfil}%
+
+\let\@evenhead\@empty
+\def\@evenfoot{\reset@font\hfil\themesid--\thepage\hfil}}%
+\pagestyle{myplain}
+
+\newcommand{\proctitle}[3]{%
+\twocolumn[%
+\begin{center}
+{\LARGE #1}\par\vspace{1zw}
+研究者：#2\hspace{3zw}指導教員：#3\par
+\vspace*{0.5em}
+\end{center}]}
