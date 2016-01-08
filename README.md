@@ -6,7 +6,7 @@ Style file of LaTeX for graduation thesis at NIT, Kagoshima College.
 * **nitkc-thesis**
 
 ## proceeding
-* **proceeding/nitkc-proceeding.sty**
+**proceeding/nitkc-proceeding.sty**
 
 ### Usage
 * `\myid` command
@@ -24,7 +24,7 @@ Creation title of proceeding.
 ```
 
 ## thesis
-* **thesis/nitkc-thesis.sty**
+**thesis/nitkc-thesis.sty**
 
 ### Usage
 * `\cover` command
@@ -32,10 +32,10 @@ Creation title of proceeding.
 Creation cover page.
 ```tex
 \begin{document}
-\cover{Title}{Student No}{Your Name}{Supervisor Name}{Filing date(day only)}
-.
-.
-.
+    \cover{Title}{Student No}{Your Name}{Supervisor Name}{Filing date(day only)}
+    .
+    .
+    .
 \end{document}
 ```
 
@@ -44,11 +44,11 @@ Creation cover page.
 Creation table of contents which has no number of page in footer.
 ```tex
 \begin{document}
-.
-\maketoc
-.
-.
-.
+    .
+    \maketoc
+    .
+    .
+    .
 \end{document}
 ```
 
