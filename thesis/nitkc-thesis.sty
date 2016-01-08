@@ -8,7 +8,7 @@
 % 表紙作成のコマンド
 %  \cover{タイトル}{学籍番号}{氏名}{指導教員名}{提出日にち}
 %%%
-\newcommand{\cover}[5]{\newpage%
+\newcommand{\cover}[5]{
 \thispagestyle{empty}
 \begin{center}
 \vspace*{6em}
@@ -29,8 +29,8 @@
 % 目次作成のコマンド
 %  \toc
 %%%
-\newcommand{\maketoc}{\newpage%
+\newcommand{\maketoc}{
 \thispagestyle{empty}
 \tableofcontents
-\clearpage
+\newpage
 \setcounter{page}{1}}
