@@ -2,8 +2,24 @@
 Style file of LaTeX for graduation thesis at NIT, Kagoshima College.
 
 # Style files
-## abstract
-* none
+* **nitkc-proceeding**
+* **nitkc-thesis**
+
+## proceeding
+* **proceeding/nitkc-proceeding.sty**
+
+### Usage
+#### `\myid` command
+Adding ID prefix to page number in footer.
+```tex
+\myid{ID}
+```
+
+#### `\proctitle` command
+Creation title of proceeding.
+```tex
+\proctitle{Title}{Your Name}{Supervisor Name}
+```
 
 ## thesis
 * **thesis/nitkc-thesis.sty**
@@ -13,7 +29,7 @@ Style file of LaTeX for graduation thesis at NIT, Kagoshima College.
 Creation cover page.
 ```tex
 \begin{document}
-\cover{Title}{Student No}{Name of you}{Name of supervisor}{Filing date(day only)}
+\cover{Title}{Student No}{Your Name}{Supervisor Name}{Filing date(day only)}
 .
 .
 .
@@ -34,6 +50,9 @@ Creation table of contents.
 
 # Author
 KAGE
+
+# Collaborator
+[しんぷっと(@a0symptote)](https://twitter.com/a0symptote)
 
 # License
 MIT License
