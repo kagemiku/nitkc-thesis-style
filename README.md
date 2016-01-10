@@ -59,7 +59,8 @@ Please look at **examples** directory.
 KAGE
 
 # Collaborator
-[しんぷっと(@a0symptote)](https://twitter.com/a0symptote)
+* Mr. T
+* [しんぷっと(@a0symptote)](https://twitter.com/a0symptote)
 
 # License
 MIT License
