@@ -1,0 +1,43 @@
+\ProvidesPackage{nitkc-proceeding}
+
+
+% 余白
+\RequirePackage{geometry}
+\geometry{top=20truemm, bottom=20truemm, left=20truemm, right=20truemm}
+
+% 1ページあたり50行程度に
+\renewcommand{\baselinestretch}{0.83}
+
+%%%
+% ページ番号へ整理番号をプレフィックスとして付与
+% \myid{整理番号}
+%%%
+\newcommand{\myid}[1]{%
+    \def\themesid{#1}
+}
+
+% ページスタイルを作成
+\def\ps@proplain{%
+    \let\@mkboth\@gobbletwo
+    \let\ps@jpl@in\ps@plain
+    \let\@oddhead\@empty
+    \def\@oddfoot{\reset@font\hfil\themesid--\thepage\hfil}
+    \let\@evenhead\@empty
+    \def\@evenfoot{\reset@font\hfil\themesid--\thepage\hfil}
+}
+\pagestyle{proplain}
+
+%%%
+% 講演用のタイトル作成
+% \proctitle{タイトル}{学生氏名}{指導教員名}
+%%%
+\newcommand{\proctitle}[3]{%
+    \twocolumn[%
+        {\centering
+            {\LARGE #1}\par\vspace{1zw}
+            研究者：#2\hspace{3zw}指導教員：#3\par
+            \vspace*{0.5em}
+        }
+    ]
+}
+
